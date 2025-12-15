@@ -12,4 +12,12 @@ public class Animatronic{
         this.AgressionLevel = AgressionLevel;
         this.isActive = isActive;
     }
+    public void Act(){
+        if (!isActive){
+            System.out.println(name + " is inactive.");
+        } else {
+            System.out.println(name + " is active and has an aggression level of " + AgressionLevel + ".");
+        }
+    }
+    
 }
