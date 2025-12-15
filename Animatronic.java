@@ -15,9 +15,15 @@ public class Animatronic{
     public void Act(){
         if (!isActive){
             System.out.println(name + " is inactive.");
+            return;
+        }
+        if (AgressionLevel > 7){
+            System.out.println(name + " is attacking!");
+        } else if (AgressionLevel > 4){
+            System.out.println(name + " is moving closer.");
         } else {
-            System.out.println(name + " is active and has an aggression level of " + AgressionLevel + ".");
+            System.out.println(name + " is idling.");
         }
     }
-    
+
 }
